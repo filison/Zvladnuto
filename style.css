@@ -1,44 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  background: #f8f9fa;
-  color: #212529;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #00b09b, #96c93d);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
   text-align: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
-main {
-  max-width: 500px;
-  padding: 2rem;
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.button {
-  display: inline-block;
-  background-color: #007bff;
+button {
+  background-color: #00b09b;
   color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.button:hover {
-  background-color: #0056b3;
+button:hover {
+  background-color: #028a76;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
