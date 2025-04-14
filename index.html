@@ -3,16 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zvládnu to – Chytrý pomocník pro zvládání finanční nejistoty a stresu." />
   <title>Zvládnu to</title>
-  <meta name="description" content="Chytrý pomocník pro zvládání finanční nejistoty. Praktické rady, plánování a podpora duševního zdraví.">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f9fbfc;
+      color: #111;
+      text-align: center;
+    }
+
+    header {
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #0070f3;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    section {
+      background: white;
+      padding: 3rem 1rem;
+    }
+
+    .features {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .feature {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+
+    footer {
+      background: #e5e7eb;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 600px) {
+      .features {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
 </head>
 <body>
-  <main>
+
+  <header>
     <h1>Zvládnu to</h1>
     <p>Chytrý pomocník pro zvládání finanční nejistoty a stresu.</p>
-    <a href="#" class="button">Vyzkoušet zdarma</a>
-  </main>
+    <a class="cta-button" href="#vyzkouset">Vyzkoušet zdarma</a>
+  </header>
+
+  <section>
+    <h2>Co aplikace umí</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Plánuj příjmy a výdaje</h3>
+        <p>Jednoduchý přehled ti pomůže mít své finance pod kontrolou.</p>
+      </div>
+      <div class="feature">
+        <h3>Najdi úspory</h3>
+        <p>Chytrý poradce ti ukáže, kde můžeš ušetřit nebo získat navíc.</p>
+      </div>
+      <div class="feature">
+        <h3>Ulev si od stresu</h3>
+        <p>Praktické tipy a podpora ti pomohou zvládnout těžké období.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="vyzkouset">
+    <h2>Připrav se začít</h2>
+    <a class="cta-button" href="#">Vyzkoušet zdarma</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zvládnu to | IČO: 22284010 | <a href="#">Podmínky</a> | <a href="#">Ochrana osobních údajů</a></p>
+  </footer>
+
 </body>
 </html>
